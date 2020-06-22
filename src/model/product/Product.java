@@ -1,4 +1,4 @@
-package dto.product;
+package model.product;
 
 import javax.persistence.*;
 

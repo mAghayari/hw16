@@ -1,8 +1,8 @@
 package view;
 
-import dto.cart.Cart;
-import dto.cart.CartItem;
-import dto.product.Product;
+import model.cart.Cart;
+import model.cart.CartItem;
+import model.product.Product;
 import services.CartServices;
 
 import java.util.ArrayList;

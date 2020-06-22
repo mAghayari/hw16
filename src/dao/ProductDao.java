@@ -1,6 +1,6 @@
 package dao;
 
-import dto.product.Product;
+import model.product.Product;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

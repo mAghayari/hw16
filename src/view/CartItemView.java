@@ -1,9 +1,9 @@
 package view;
 
 import dao.ProductDao;
-import dto.cart.Cart;
-import dto.cart.CartItem;
-import dto.product.Product;
+import model.cart.Cart;
+import model.cart.CartItem;
+import model.product.Product;
 import services.ProductServices;
 
 import java.util.ArrayList;

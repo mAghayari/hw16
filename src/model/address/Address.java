@@ -1,4 +1,4 @@
-package dto.address;
+package model.address;
 
 import javax.persistence.Embeddable;
 

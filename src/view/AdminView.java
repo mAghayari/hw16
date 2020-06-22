@@ -1,6 +1,6 @@
 package view;
 
-import dto.admin.Admin;
+import model.admin.Admin;
 import services.AdminServices;
 
 import java.util.Objects;

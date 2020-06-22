@@ -1,6 +1,6 @@
-package dto.cart;
+package model.cart;
 
-import dto.product.Product;
+import model.product.Product;
 
 import javax.persistence.*;
 

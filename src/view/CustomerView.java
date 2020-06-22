@@ -1,6 +1,6 @@
 package view;
 
-import dto.customer.Customer;
+import model.customer.Customer;
 import services.CustomerServices;
 
 import java.util.*;

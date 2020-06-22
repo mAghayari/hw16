@@ -1,7 +1,7 @@
 package dao;
 
-import dto.cart.Cart;
-import dto.customer.Customer;
+import model.cart.Cart;
+import model.customer.Customer;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

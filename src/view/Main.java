@@ -1,10 +1,10 @@
 package view;
 
 import dao.ProductDao;
-import dto.admin.Admin;
-import dto.product.Product;
-import dto.customer.Customer;
-import dto.cart.Cart;
+import model.admin.Admin;
+import model.product.Product;
+import model.customer.Customer;
+import model.cart.Cart;
 import services.*;
 
 import java.util.*;

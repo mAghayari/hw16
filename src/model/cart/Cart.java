@@ -1,7 +1,7 @@
-package dto.cart;
+package model.cart;
 
-import dto.address.Address;
-import dto.customer.Customer;
+import model.address.Address;
+import model.customer.Customer;
 
 import javax.persistence.*;
 import java.sql.Timestamp;

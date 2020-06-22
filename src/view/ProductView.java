@@ -1,6 +1,6 @@
 package view;
 
-import dto.product.Product;
+import model.product.Product;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package view;
 
-import dto.address.Address;
+import model.address.Address;
 
 import java.util.Scanner;
 

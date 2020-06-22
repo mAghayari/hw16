@@ -1,7 +1,7 @@
 package services;
 
 import dao.CustomerDao;
-import dto.customer.Customer;
+import model.customer.Customer;
 
 import java.util.List;
 

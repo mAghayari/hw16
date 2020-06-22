@@ -1,7 +1,7 @@
-package dto.customer;
+package model.customer;
 
-import dto.address.Address;
-import dto.cart.Cart;
+import model.address.Address;
+import model.cart.Cart;
 
 import javax.persistence.*;
 import java.util.ArrayList;

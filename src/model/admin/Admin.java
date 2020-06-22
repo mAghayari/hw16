@@ -1,4 +1,4 @@
-package dto.admin;
+package model.admin;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
