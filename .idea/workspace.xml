@@ -2,8 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b12babba-ed2e-475a-9742-90de8ecf4851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dao/AdminDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/dao/AdminDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dao/CartDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/dao/CartDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dao/CustomerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/dao/CustomerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/dao/ProductDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dao/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/dao/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dto/address/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dto/admin/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dto/cart/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dto/cart/CartItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dto/customer/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dto/product/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/dto/product/ProductCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/services/AdminServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/services/AdminServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/services/CartServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/services/CartServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/services/CustomerServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/services/CustomerServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/services/ProductServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/services/ProductServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/AdminView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/AdminView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/CartItemView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/CartItemView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/CartView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/CartView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/CartView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/CartView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/CustomerView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/CustomerView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/CustomerView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/CustomerView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/GettingAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/GettingAddress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW16/view/ProductView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW16/view/ProductView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +110,12 @@
       <workItem from="1592449599356" duration="1611000" />
       <workItem from="1592466238182" duration="942000" />
       <workItem from="1592468359718" duration="1782000" />
+      <workItem from="1592804282291" duration="212000" />
+      <workItem from="1592927296393" duration="673000" />
+      <workItem from="1592930040770" duration="680000" />
+      <workItem from="1593017042866" duration="2732000" />
+      <workItem from="1593022039168" duration="268000" />
+      <workItem from="1593048814539" duration="1296000" />
     </task>
     <task id="LOCAL-00001" summary="adding hw16 files">
       <created>1591510605645</created>
@@ -94,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591510605645</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rename dto package to model">
+      <created>1592804409884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592804409884</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +139,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding hw16 files" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding hw16 files" />
+    <MESSAGE value="rename dto package to model" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename dto package to model" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Project_Structure" timestamp="1591457416369">
@@ -125,10 +163,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591459906843" />
-    <state x="406" y="10" key="CommitChangelistDialog2" timestamp="1591510604086">
+    <state x="406" y="10" key="CommitChangelistDialog2" timestamp="1592804395663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="406" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1591510604086" />
+    <state x="406" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1592804395663" />
     <state x="727" y="178" key="EnvironmentVariablesDialog" timestamp="1591505912837">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -137,22 +175,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="158" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592468274661" />
-    <state width="1493" height="344" key="GridCell.Tab.0.bottom" timestamp="1591510831030">
+    <state width="1493" height="358" key="GridCell.Tab.0.bottom" timestamp="1593021953156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="344" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591510831030" />
-    <state width="1493" height="344" key="GridCell.Tab.0.center" timestamp="1591510831030">
+    <state width="1493" height="358" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593021953156" />
+    <state width="1493" height="358" key="GridCell.Tab.0.center" timestamp="1593021953156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="344" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591510831030" />
-    <state width="1493" height="344" key="GridCell.Tab.0.left" timestamp="1591510831030">
+    <state width="1493" height="358" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593021953156" />
+    <state width="1493" height="358" key="GridCell.Tab.0.left" timestamp="1593021953156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="344" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591510831030" />
-    <state width="1493" height="344" key="GridCell.Tab.0.right" timestamp="1591510831030">
+    <state width="1493" height="358" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593021953156" />
+    <state width="1493" height="358" key="GridCell.Tab.0.right" timestamp="1593021953156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="344" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591510831030" />
+    <state width="1493" height="358" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593021953156" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1591510831025">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -177,10 +215,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1591510614240" />
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1592466501541">
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1593048819908">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1592466501541" />
+    <state x="477" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1593048819908" />
+    <state x="418" y="40" key="new project wizard" timestamp="1593062255157">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="418" y="40" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1593062255157" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -196,39 +238,29 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dto/customer/Customer.java</url>
+          <url>file://$PROJECT_DIR$/src/model/customer/Customer.java</url>
           <line>116</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dto/cart/Cart.java</url>
+          <url>file://$PROJECT_DIR$/src/model/cart/Cart.java</url>
           <line>81</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dto/cart/CartItem.java</url>
+          <url>file://$PROJECT_DIR$/src/model/cart/CartItem.java</url>
           <line>52</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dto/address/Address.java</url>
+          <url>file://$PROJECT_DIR$/src/model/address/Address.java</url>
           <line>45</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dto/customer/Customer.java</url>
+          <url>file://$PROJECT_DIR$/src/model/customer/Customer.java</url>
           <line>112</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dao/CustomerDao.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dao/CustomerDao.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/view/Main.java</url>
