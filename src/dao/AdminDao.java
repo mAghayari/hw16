@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
 public class AdminDao {
-    SessionFactory sessionFactory = new Configuration().configure("./dao/hibernate.cfg.xml").buildSessionFactory();
+    SessionFactory sessionFactory = new Configuration().configure("config/hibernate.cfg.xml").buildSessionFactory();
 
     public void addAdmin(Admin admin) {
         Session session = sessionFactory.openSession();

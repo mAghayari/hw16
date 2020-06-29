@@ -10,7 +10,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class CustomerDao {
-    SessionFactory sessionFactory = new Configuration().configure("./dao/hibernate.cfg.xml").buildSessionFactory();
+    SessionFactory sessionFactory = new Configuration().configure("config/hibernate.cfg.xml").buildSessionFactory();
     private int customerCounter = 0;
 
     public void addCustomer(Customer customer) {

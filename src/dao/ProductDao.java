@@ -10,7 +10,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class ProductDao {
-    SessionFactory sessionFactory = new Configuration().configure("./dao/hibernate.cfg.xml").buildSessionFactory();
+    SessionFactory sessionFactory = new Configuration().configure("config/hibernate.cfg.xml").buildSessionFactory();
 
     public List<Product> getAllProducts() {
         List<Product> products;
