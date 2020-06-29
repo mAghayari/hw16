@@ -1,31 +1,31 @@
 package view;
 
 import dao.ProductDao;
-import model.cart.Cart;
-import model.cart.CartItem;
-import model.product.Product;
+import model.Order;
+import model.OrderItem;
+import model.Product;
 import services.ProductServices;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartItemView {
+public class OrderItemView {
 
-    public void deleteAnOrderItem(Cart cart, List<Product> products) {
+    public void deleteAnOrderItem(Order order, List<Product> products) {
         ProductServices productServices = new ProductServices();
-        List<CartItem> orderedItems = cart.getCartItems();
+        List<OrderItem> orderedItems = order.getOrderItems();
 
         printOrderItems(orderedItems);
 
         System.out.println("Enter id of a product to delete it");
         int id = GetUserInputs.getInBoundDigitalInput(products.size());
 
-        for (CartItem cartItem : orderedItems) {
-            if (cartItem.getProduct().getId() == id) {
-                productServices.getASoledItemBack(cartItem);
-                orderedItems.remove(cartItem);
-                cart.setCartItems(orderedItems);
-                cart.setTotalCost(orderedItems);
+        for (OrderItem orderItem : orderedItems) {
+            if (orderItem.getProduct().getId() == id) {
+                productServices.getASoledItemBack(orderItem);
+                orderedItems.remove(orderItem);
+                order.setOrderItems(orderedItems);
+                order.setTotalCost(orderedItems);
 
                 System.out.println("Item deleted");
                 return;
@@ -34,16 +34,16 @@ public class CartItemView {
         System.out.println("No such ID was found in your order\n");
     }
 
-    public void printOrderItems(List<CartItem> orderedItems) {
+    public void printOrderItems(List<OrderItem> orderedItems) {
         System.out.println("Your ordered:\n");
 
-        for (CartItem cartItem : orderedItems) {
-            System.out.println(cartItem.toString());
+        for (OrderItem orderItem : orderedItems) {
+            System.out.println(orderItem.toString());
         }
     }
 
-    public void addProductToCart(Cart cart, ProductDao productDao, List<Product> products, String category) {
-        if (cart.getCartItems().size() >= 5) {
+    public void addProductToOrder(Order order, ProductDao productDao, List<Product> products, String category) {
+        if (order.getOrderItems().size() >= 5) {
             System.out.println("There are 5 products in your orderList,\nFinalize them or remove some then continue shopping.");
         } else {
             ArrayList<Product> categoryProducts = ProductView.getProperProducts(category, products);
@@ -59,12 +59,12 @@ public class CartItemView {
                     System.out.println("How much do you wanna by?(must be in stock's bound)");
                     int count = GetUserInputs.getInBoundDigitalInput(stock);
 
-                    List<CartItem> orderedItems = cart.getCartItems();
+                    List<OrderItem> orderedItems = order.getOrderItems();
                     boolean isInList = orderedItems.stream().anyMatch(orderItem -> orderItem.getProduct().getId() == id);
                     if (isInList) {
                         updateAnOrderItem(id, count, orderedItems);
                     } else {
-                        addNewOrderItem(cart, products, id, count, orderedItems);
+                        addNewOrderItem(order, products, id, count, orderedItems);
                     }
                     products.get(id - 1).setStock(stock - count);
                     productDao.updateProduct(products.get(id - 1));
@@ -75,20 +75,20 @@ public class CartItemView {
         }
     }
 
-    private void addNewOrderItem(Cart cart, List<Product> products, int id, int count, List<CartItem> orderedItems) {
-        CartItem cartItem = new CartItem();
-        cartItem.setCount(count);
-        cartItem.setCart(cart);
-        cartItem.setProduct(products.get(id - 1));
-        orderedItems.add(cartItem);
+    private void addNewOrderItem(Order order, List<Product> products, int id, int count, List<OrderItem> orderedItems) {
+        OrderItem orderItem = new OrderItem();
+        orderItem.setCount(count);
+        orderItem.setOrder(order);
+        orderItem.setProduct(products.get(id - 1));
+        orderedItems.add(orderItem);
     }
 
-    private void updateAnOrderItem(int id, int count, List<CartItem> cartItems) {
-        for (CartItem cartItem : cartItems) {
-            if (cartItem.getProduct().getId() == id) {
-                int index = cartItems.indexOf(cartItem);
-                count += cartItems.get(index).getCount();
-                cartItems.get(index).setCount(count);
+    private void updateAnOrderItem(int id, int count, List<OrderItem> orderItems) {
+        for (OrderItem orderItem : orderItems) {
+            if (orderItem.getProduct().getId() == id) {
+                int index = orderItems.indexOf(orderItem);
+                count += orderItems.get(index).getCount();
+                orderItems.get(index).setCount(count);
                 break;
             }
         }
